@@ -1,130 +1,54 @@
 doctype html
-html(lang='en')
-
+html(lang='zh-CN')
     head
-
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content)
-        meta(name='author', content)
+        meta(name='description', content='通过邮箱或 GitHub 联系张楠楠。')
+        meta(name='author', content='张楠楠')
+        title 联系 | 张楠楠
 
-        title Modern Business - Start Bootstrap Template
-
-        // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
-
         include includes/css.pug
 
-    body.d-flex.flex-column
-
+    body.d-flex.flex-column.h-100.bg-light
         main.flex-shrink-0
-
-            // Navigation
             include includes/navbar.pug
 
-            // Page content
             section.py-5
+                .container.px-5.py-lg-5
+                    .row.gx-5.justify-content-center
+                        .col-lg-10.col-xl-9
+                            .contact-panel.rounded-4.p-4.p-md-5
+                                .row.align-items-center.g-5
+                                    .col-lg-7
+                                        p.section-kicker.mb-2 保持联系
+                                        h1.display-5.fw-bolder.mb-3
+                                            span.text-gradient.d-inline 一起交流 AI Agent 与软件开发
+                                        p.lead.text-muted.mb-4 如果你对 RepoPilot、工具调用、安全边界或我的其他项目感兴趣，欢迎通过邮箱或 GitHub 联系我。
+                                        .d-flex.flex-column.flex-sm-row.gap-3
+                                            a.btn.btn-primary.btn-lg.px-4(href='mailto:1241812137@qq.com')
+                                                i.bi.bi-envelope.me-2
+                                                | 发送邮件
+                                            a.btn.btn-outline-dark.btn-lg.px-4(href='https://github.com/zhangnannanyyds', target='_blank', rel='noreferrer')
+                                                i.bi.bi-github.me-2
+                                                | 访问 GitHub
+                                    .col-lg-5
+                                        .contact-card.bg-white.rounded-4.p-4
+                                            .d-flex.align-items-center.mb-4
+                                                .feature.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
+                                                    i.bi.bi-envelope
+                                                div
+                                                    .small.text-muted 邮箱
+                                                    a.fw-bolder.text-decoration-none(href='mailto:1241812137@qq.com') 1241812137@qq.com
+                                            .d-flex.align-items-center.mb-4
+                                                .feature.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
+                                                    i.bi.bi-github
+                                                div
+                                                    .small.text-muted GitHub
+                                                    a.fw-bolder.text-decoration-none(href='https://github.com/zhangnannanyyds', target='_blank', rel='noreferrer') @zhangnannanyyds
+                                            button#copyEmail.btn.btn-light.w-100(type='button', data-email='1241812137@qq.com')
+                                                i.bi.bi-clipboard.me-2
+                                                span 复制邮箱地址
 
-                .container.px-5
-
-                    // Contact form
-                    .bg-light.rounded-4.py-5.px-4.px-md-5
-                        .text-center.mb-5
-                            .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.mb-3
-                                i.bi.bi-envelope
-                            h1.fw-bolder Get in touch
-                            p.lead.fw-normal.text-muted.mb-0 Let's work together!
-                        .row.gx-5.justify-content-center
-                            .col-lg-8.col-xl-6
-
-                                // * * * * * * * * * * * * * * *
-                                // * * SB Forms Contact Form * *
-                                // * * * * * * * * * * * * * * *
-
-                                // This form is pre-integrated with SB Forms.
-                                // To make this form functional, sign up at
-                                // https://startbootstrap.com/solution/contact-forms
-                                // to get an API token!
-
-                                form#contactForm(data-sb-form-api-token='API_TOKEN')
-
-                                    // Name input
-                                    .form-floating.mb-3
-                                        input#name.form-control(
-                                            type='text',
-                                            placeholder='Enter your name...'
-                                            data-sb-validations='required'
-                                        )
-                                        label(for='name') Full name
-                                        .invalid-feedback(data-sb-feedback='name:required')
-                                            | A name is required.
-                                    
-                                    // Email address input
-                                    .form-floating.mb-3
-                                        input#email.form-control(
-                                            type='email',
-                                            placeholder='name@example.com'
-                                            data-sb-validations='required,email'
-                                        )
-                                        label(for='email') Email address
-                                        .invalid-feedback(data-sb-feedback='email:required')
-                                            | An email is required.
-                                        .invalid-feedback(data-sb-feedback='email:email')
-                                            | Email is not valid.
-                                    
-                                    // Phone number input
-                                    .form-floating.mb-3
-                                        input#phone.form-control(
-                                            type='tel',
-                                            placeholder='(123) 456-7890'
-                                            data-sb-validations='required'
-                                        )
-                                        label(for='phone') Phone number
-                                        .invalid-feedback(data-sb-feedback='phone:required')
-                                            | A phone number is required.
-                                    
-                                    // Message input
-                                    .form-floating.mb-3
-                                        textarea#message.form-control(
-                                            type='text',
-                                            placeholder='Enter your message here...',
-                                            style='height: 10rem;'
-                                            data-sb-validations='required'
-                                        )
-                                        label(for='message') Message
-                                        .invalid-feedback(data-sb-feedback='message:required')
-                                            | A message is required.
-
-                                    // Submit success message
-                                    //
-                                    // This is what your users will see when the form
-                                    // has successfully submitted
-                                    #submitSuccessMessage.d-none
-                                        .text-center.mb-3
-                                            .fw-bolder Form submission successful!
-                                            | To activate this form, sign up at
-                                            br
-                                            a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                                    // Submit error message
-                                    //
-                                    // This is what your users will see when there is
-                                    // an error submitting the form
-                                    #submitErrorMessage.d-none
-                                        .text-center.text-danger.mb-3 Error sending message!
-
-                                    // Submit Button
-                                    .d-grid
-                                        button#submitButton.btn.btn-primary.btn-lg.disabled(type='submit') Submit
-
-        // Footer
         include includes/footer.pug
-
         include includes/scripts.pug
-
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-        // * *                               SB Forms JS                               * *
-        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')

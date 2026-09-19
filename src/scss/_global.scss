@@ -5,3 +5,215 @@ body,
 html {
     height: 100%;
 }
+
+body {
+    color: #1f2937;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+a,
+button {
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease,
+        transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.site-navbar {
+    border-bottom: 1px solid rgba(23, 74, 126, 0.08);
+    box-shadow: 0 0.25rem 1.5rem rgba(31, 41, 55, 0.04);
+}
+
+.brand-dot {
+    color: rgba(23, 74, 126, 0.35);
+}
+
+.hero-section {
+    background:
+        radial-gradient(circle at 85% 12%, rgba(15, 157, 154, 0.13), transparent 26rem),
+        radial-gradient(circle at 12% 88%, rgba(23, 74, 126, 0.1), transparent 28rem),
+        #ffffff;
+}
+
+.section-kicker {
+    color: $primary;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.tech-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 0.85rem;
+    border: 1px solid rgba(23, 74, 126, 0.14);
+    border-radius: 999px;
+    color: #3f4b5a;
+    background: rgba(255, 255, 255, 0.84);
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.capability-card,
+.contact-panel,
+.featured-project {
+    border: 1px solid rgba(23, 74, 126, 0.09);
+    background: #ffffff;
+    box-shadow: 0 1rem 3rem rgba(31, 41, 55, 0.07);
+}
+
+.capability-card {
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.featured-project {
+    background:
+        linear-gradient(135deg, rgba(23, 74, 126, 0.05), rgba(15, 157, 154, 0.08)),
+        #ffffff;
+}
+
+.resume-meta {
+    height: 100%;
+    background: linear-gradient(135deg, rgba(23, 74, 126, 0.08), rgba(15, 157, 154, 0.08));
+}
+
+.resume-list,
+.project-points {
+    padding-left: 1.2rem;
+}
+
+.resume-list li,
+.project-points li {
+    margin-bottom: 0.65rem;
+}
+
+.resume-list li:last-child,
+.project-points li:last-child {
+    margin-bottom: 0;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    min-height: 3rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.8rem;
+    background: #f5f7fa;
+    color: #334155;
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+
+.projects-intro {
+    max-width: 48rem;
+}
+
+.project-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 1.25rem 3rem rgba(31, 41, 55, 0.12) !important;
+}
+
+.project-visual {
+    display: flex;
+    min-height: 15rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.75rem;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.project-visual i {
+    font-size: 4rem;
+}
+
+.ai-visual {
+    background: linear-gradient(145deg, #174a7e, #0f9d9a);
+}
+
+.home-visual {
+    background: linear-gradient(145deg, #315c91, #5e8dc5);
+}
+
+.data-visual {
+    background: linear-gradient(145deg, #087f7d, #42b7ae);
+}
+
+.contact-panel {
+    background:
+        linear-gradient(135deg, rgba(23, 74, 126, 0.04), rgba(15, 157, 154, 0.08)),
+        #ffffff;
+}
+
+.contact-card {
+    border: 1px solid rgba(23, 74, 126, 0.1);
+    box-shadow: 0 1rem 2.5rem rgba(31, 41, 55, 0.08);
+}
+
+.site-footer {
+    border-top: 1px solid rgba(23, 74, 126, 0.08);
+}
+
+@media (max-width: 575.98px) {
+    .hero-section .container {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+    }
+
+    .hero-section .row {
+        --bs-gutter-x: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hero-section [class*='col-'] {
+        min-width: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .hero-section .display-4 {
+        max-width: 100%;
+        font-size: 2.05rem;
+        line-height: 1.16;
+        overflow-wrap: anywhere;
+        word-break: break-all;
+    }
+
+    .hero-section .display-4 .text-gradient {
+        display: block !important;
+    }
+
+    .hero-section .d-grid .btn {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-section .tech-chip {
+        font-size: 0.76rem;
+    }
+
+    .skill-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container.px-5 {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+    }
+}

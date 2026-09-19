@@ -1,16 +1,22 @@
-nav.navbar.navbar-expand-lg.navbar-light.bg-white.py-3
+nav.navbar.navbar-expand-lg.navbar-light.bg-white.py-3.sticky-top.site-navbar
     .container.px-5
         a.navbar-brand(href='index.html')
-            span.fw-bolder.text-primary Start Bootstrap
-        button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.fw-bolder.text-primary 张楠楠
+            span.brand-dot.mx-2 ·
+            span.small.text-muted AI Agent
+        button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='展开导航菜单')
             span.navbar-toggler-icon
         #navbarSupportedContent.collapse.navbar-collapse
-            ul.navbar-nav.ms-auto.mb-2.mb-lg-0.small.fw-bolder
+            ul.navbar-nav.ms-auto.mb-2.mb-lg-0.small.fw-bolder.align-items-lg-center
                 li.nav-item
-                    a.nav-link(href='index.html') Home
+                    a.nav-link(href='index.html') 首页
                 li.nav-item
-                    a.nav-link(href='resume.html') Resume
+                    a.nav-link(href='resume.html') 简历
                 li.nav-item
-                    a.nav-link(href='projects.html') Projects
+                    a.nav-link(href='projects.html') 项目
                 li.nav-item
-                    a.nav-link(href='contact.html') Contact
+                    a.nav-link(href='contact.html') 联系
+                li.nav-item.ms-lg-2
+                    a.btn.btn-sm.btn-outline-primary.rounded-pill.px-3(href='https://github.com/zhangnannanyyds', target='_blank', rel='noreferrer')
+                        i.bi.bi-github.me-2
+                        | GitHub

@@ -3,10 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="张楠楠的个人主页，专注于智能家居应用开发与 AI Agent / RAG 项目实践。" />
+        <meta name="description" content="张楠楠的个人主页，展示 AI Agent、Python、GitHub API 与 HarmonyOS 项目实践。" />
         <meta name="author" content="张楠楠" />
-        <title>张楠楠 | 个人主页</title>
-        <!-- Favicon-->
+        <title>张楠楠 | AI Agent 与 Python 开发</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Custom Google font-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,45 +18,61 @@
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top site-navbar">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Start Bootstrap</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <a class="navbar-brand" href="index.html">
+                        <span class="fw-bolder text-primary">张楠楠</span>
+                        <span class="brand-dot mx-2">·</span>
+                        <span class="small text-muted">AI Agent</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="展开导航菜单"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder align-items-lg-center">
+                            <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">简历</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">项目</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">联系</a></li>
+                            <li class="nav-item ms-lg-2">
+                                <a class="btn btn-sm btn-outline-primary rounded-pill px-3" href="https://github.com/zhangnannanyyds" target="_blank" rel="noreferrer">
+                                    <i class="bi bi-github me-2"></i>
+                                    GitHub
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <!-- Header-->
-            <header class="py-5">
-                <div class="container px-5 pb-5">
+            <header class="hero-section py-5">
+                <div class="container px-5 py-lg-5">
                     <div class="row gx-5 align-items-center">
-                        <div class="col-xxl-5">
-                            <!-- Header text content-->
+                        <div class="col-xxl-6">
                             <div class="text-center text-xxl-start">
-                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">智能家居 &middot; 软件开发 &middot; AI 应用</div></div>
-                                <div class="fs-3 fw-light text-muted">你好，我是</div>
-                                <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">张楠楠</span></h1>
-                                <p class="lead fw-light text-muted mb-4">专注于智能家居应用开发，并持续探索 AI Agent 与 RAG 技术。</p>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                    <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">查看简历</a>
-                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">查看项目</a>
+                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4 px-3 py-2"><div class="text-uppercase">AI Agent &middot; Python &middot; Tool Calling</div></div>
+                                <p class="fs-4 fw-semibold text-primary mb-2">你好，我是张楠楠</p>
+                                <h1 class="display-4 fw-bolder mb-4">
+                                    让大模型不仅会回答，
+                                    <span class="text-gradient d-inline">还能使用工具完成任务</span>
+                                </h1>
+                                <p class="lead text-muted mb-4">数据科学与大数据技术本科生，正在构建面向真实代码仓库的 AI Agent，并持续学习模型接入、工具调用、安全边界与工程测试。</p>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-4">
+                                    <a class="btn btn-primary btn-lg px-4 py-3 fw-bolder" href="https://github.com/zhangnannanyyds/repo-learning-agent" target="_blank" rel="noreferrer">
+                                        <i class="bi bi-github me-2"></i>
+                                        查看 RepoPilot
+                                    </a>
+                                    <a class="btn btn-outline-dark btn-lg px-4 py-3 fw-bolder" href="projects.html">浏览项目</a>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-center justify-content-xxl-start gap-2">
+                                    <span class="tech-chip">OpenAI Agents SDK</span>
+                                    <span class="tech-chip">GitHub REST API</span>
+                                    <span class="tech-chip">Python unittest</span>
+                                    <span class="tech-chip">安全与隐私控制</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-7">
-                            <!-- Header profile picture-->
+                        <div class="col-xxl-6">
                             <div class="d-flex justify-content-center mt-5 mt-xxl-0">
                                 <div class="profile bg-gradient-primary-to-secondary">
-                                    <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
-                                    <!-- Watch a tutorial on how to do this on YouTube (link)-->
-                                    <img class="profile-img" src="assets/profile.png" alt="..." />
+                                    <img class="profile-img" src="assets/profile-lively.png" alt="张楠楠个人照片" />
                                     <div class="dots-1">
                                         <!-- SVG Dots-->
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4" xml:space="preserve">
@@ -176,37 +191,75 @@
                     </div>
                 </div>
             </header>
-            <!-- About Section-->
             <section class="bg-light py-5">
-                <div class="container px-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-xxl-8">
-                            <div class="text-center my-5">
-                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">关于我</span></h2>
-                                <p class="lead fw-light mb-4">正在把想法做成真正可以运行的项目。</p>
-                                <p class="text-muted">我关注智能家居场景中的设备管理、场景联动和用户体验，也在学习知识库问答、Agent 工具调用等 AI 应用开发方法。</p>
-                                <div class="d-flex justify-content-center fs-2 gap-4">
-                                    <a class="text-gradient" href="https://github.com/zhangnannanyds" aria-label="GitHub"><i class="bi bi-github"></i></a>
-                                    <a class="text-gradient" href="resume.html" aria-label="个人简历"><i class="bi bi-file-earmark-person"></i></a>
-                                    <a class="text-gradient" href="projects.html" aria-label="个人项目"><i class="bi bi-kanban"></i></a>
-                                </div>
+                <div class="container px-5 py-4">
+                    <div class="row gx-5 justify-content-center mb-5">
+                        <div class="col-xl-9 text-center">
+                            <p class="section-kicker mb-2">我正在解决的问题</p>
+                            <h2 class="display-6 fw-bolder mb-3"><span class="text-gradient d-inline">从自然语言到可验证的工具执行</span></h2>
+                            <p class="lead text-muted mb-0">我希望 Agent 的回答来自真实文件、真实接口和明确权限，而不是仅靠模型猜测。</p>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="capability-card h-100">
+                                <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i class="bi bi-diagram-3"></i></div>
+                                <h3 class="h5 fw-bolder">工具调用流程</h3>
+                                <p class="text-muted mb-0">将项目分析、文件读取、代码搜索和运行命令推断封装为可审计工具。</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="capability-card h-100">
+                                <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i class="bi bi-shield-check"></i></div>
+                                <h3 class="h5 fw-bolder">安全边界</h3>
+                                <p class="text-muted mb-0">通过敏感文件过滤、路径校验、只读权限和外部内容隔离保护本地数据。</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="capability-card h-100">
+                                <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i class="bi bi-check2-square"></i></div>
+                                <h3 class="h5 fw-bolder">工程验证</h3>
+                                <p class="text-muted mb-0">使用离线单元测试覆盖异常输入、访问控制、接口失败和关键边界路径。</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <section class="py-5">
+                <div class="container px-5 py-4">
+                    <div class="featured-project rounded-4 p-4 p-lg-5">
+                        <div class="row align-items-center g-4">
+                            <div class="col-lg-8">
+                                <p class="section-kicker mb-2">代表项目</p>
+                                <h2 class="fw-bolder mb-3">RepoPilot 代码仓库学习与调试 Agent</h2>
+                                <p class="text-muted mb-4">支持分析本地项目与 GitHub 仓库，完成项目识别、文件检索、代码读取、报错诊断、历史记录和 Markdown 报告导出。</p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="tech-chip">Python</span>
+                                    <span class="tech-chip">Agents SDK</span>
+                                    <span class="tech-chip">GitHub API</span>
+                                    <span class="tech-chip">55 项测试通过</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 text-lg-end"><a class="btn btn-primary px-4 py-3 fw-bolder" href="https://github.com/zhangnannanyyds/repo-learning-agent" target="_blank" rel="noreferrer">查看源代码</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
-        <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
+        <footer class="bg-white py-4 mt-auto site-footer">
             <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Your Website 2023</div></div>
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row gap-3">
                     <div class="col-auto">
-                        <a class="small" href="#!">Privacy</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Terms</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Contact</a>
+                        <div class="small text-muted">
+                            Copyright &copy;&nbsp;
+                            <span id="currentYear">2026</span>
+                            张楠楠
+                        </div>
+                    </div>
+                    <div class="col-auto d-flex align-items-center gap-3">
+                        <a class="small text-decoration-none" href="mailto:1241812137@qq.com">邮箱</a>
+                        <a class="small text-decoration-none" href="https://github.com/zhangnannanyyds" target="_blank" rel="noreferrer">GitHub</a>
+                        <a class="small text-decoration-none" href="projects.html">项目</a>
                     </div>
                 </div>
             </div>

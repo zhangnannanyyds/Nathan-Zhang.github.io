@@ -3,10 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="张楠楠的项目经历" />
+        <meta name="description" content="张楠楠的 AI Agent、HarmonyOS 与数据分析项目作品集。" />
         <meta name="author" content="张楠楠" />
-        <title>项目经历 - 张楠楠</title>
-        <!-- Favicon-->
+        <title>项目 | 张楠楠</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Custom Google font-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,97 +18,140 @@
     </head>
     <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top site-navbar">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">张楠楠</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <a class="navbar-brand" href="index.html">
+                        <span class="fw-bolder text-primary">张楠楠</span>
+                        <span class="brand-dot mx-2">·</span>
+                        <span class="small text-muted">AI Agent</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="展开导航菜单"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder align-items-lg-center">
                             <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">个人简历</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">简历</a></li>
                             <li class="nav-item"><a class="nav-link" href="projects.html">项目</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">联系我</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">联系</a></li>
+                            <li class="nav-item ms-lg-2">
+                                <a class="btn btn-sm btn-outline-primary rounded-pill px-3" href="https://github.com/zhangnannanyyds" target="_blank" rel="noreferrer">
+                                    <i class="bi bi-github me-2"></i>
+                                    GitHub
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <!-- Projects Section-->
             <section class="py-5">
                 <div class="container px-5 mb-5">
                     <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">项目经历</span></h1>
+                        <p class="section-kicker mb-2">项目作品集</p>
+                        <h1 class="display-5 fw-bolder mb-3"><span class="text-gradient d-inline">从想法到可运行的软件</span></h1>
+                        <p class="lead text-muted mx-auto projects-intro">这些项目覆盖 AI Agent 工具调用、智能家居交互与数据分析，记录了我从需求理解到实现和验证的过程。</p>
                     </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-9 col-xxl-8">
-                            <!-- HarmonyOS smart home project-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">HarmonyOS 智能家居应用开发</h2>
-                                            <p class="text-muted">使用 ArkTS/ArkUI 搭建家庭、场景、消息、我的四个核心模块，完成设备管理、场景控制和环境数据同步，并通过 TCP Socket、MQTT 对接华为云 IoT。</p>
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <article class="project-card card overflow-hidden shadow-sm rounded-4 border-0">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-lg-8">
+                                        <div class="card-body p-4 p-lg-5">
+                                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                                <span class="badge text-bg-primary">AI Agent</span>
+                                                <span class="badge text-bg-light">Python</span>
+                                                <span class="badge text-bg-light">GitHub API</span>
+                                            </div>
+                                            <h2 class="fw-bolder">RepoPilot</h2>
+                                            <p class="lead text-muted">代码仓库学习与调试 Agent</p>
+                                            <p class="text-muted">面向本地项目和 GitHub 仓库提供只读分析，支持项目识别、文件检索、代码阅读、报错诊断、会话历史、多仓库对比与报告导出。</p>
+                                            <ul class="project-points text-muted">
+                                                <li>工具调用与 OpenAI 兼容模型接口</li>
+                                                <li>敏感文件过滤、路径校验和提示注入隔离</li>
+                                                <li>55 项离线单元测试通过</li>
+                                            </ul>
+                                            <a class="btn btn-primary mt-2" href="https://github.com/zhangnannanyyds/repo-learning-agent" target="_blank" rel="noreferrer">
+                                                <i class="bi bi-github me-2"></i>
+                                                查看 GitHub 仓库
+                                            </a>
                                         </div>
-                                        <div class="bg-gradient-primary-to-secondary text-white p-4 text-center" style="min-width: 180px;"><i class="bi bi-house-gear display-4"></i><div class="mt-3">ArkTS · MQTT</div></div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="project-visual ai-visual h-100">
+                                            <i class="bi bi-cpu"></i>
+                                            <span>Agent</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- Data analysis project-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">门店数据爬取与可视化分析</h2>
-                                            <p class="text-muted">使用 Python、Pandas 和 Matplotlib 采集并清洗门店数据，完成重复值和异常值处理、多维统计、相关性分析与可视化报告。</p>
-                                        </div>
-                                        <div class="bg-dark text-white p-4 text-center" style="min-width: 180px;"><i class="bi bi-bar-chart-line display-4"></i><div class="mt-3">Python · Pandas</div></div>
+                            </article>
+                        </div>
+                        <div class="col-lg-6">
+                            <article class="project-card card shadow-sm rounded-4 border-0 h-100">
+                                <div class="project-visual home-visual">
+                                    <i class="bi bi-house-gear"></i>
+                                    <span>HarmonyOS</span>
+                                </div>
+                                <div class="card-body p-4 p-lg-5">
+                                    <div class="d-flex flex-wrap gap-2 mb-3">
+                                        <span class="badge text-bg-primary">智能家居</span>
+                                        <span class="badge text-bg-light">ArkTS / ArkUI</span>
                                     </div>
+                                    <h2 class="h3 fw-bolder">HarmonyOS 智能家居应用</h2>
+                                    <p class="text-muted">参与家庭、场景、消息和个人模块开发，完成设备管理、场景执行、状态同步及华为云 IoT 对接。</p>
+                                    <ul class="project-points text-muted mb-0">
+                                        <li>AppStorage 用户数据隔离</li>
+                                        <li>TCP Socket / MQTT 通信</li>
+                                        <li>场景快照与冲突处理</li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <!-- Other projects -->
-                            <div class="card shadow rounded-4 border-0 mt-5">
-                                <div class="card-body p-5">
-                                    <h2 class="fw-bolder">CentOS7 多人在线聊天室</h2>
-                                    <p class="text-muted">基于 Java 和 TCP Socket 搭建服务端，使用多线程处理并发连接，实现多人通信、群发消息、在线用户列表、密码校验和端口连通性测试。</p>
-                                    <span class="badge text-bg-light me-2">Java</span>
-                                    <span class="badge text-bg-light me-2">TCP Socket</span>
-                                    <span class="badge text-bg-light">Linux</span>
+                            </article>
+                        </div>
+                        <div class="col-lg-6">
+                            <article class="project-card card shadow-sm rounded-4 border-0 h-100">
+                                <div class="project-visual data-visual">
+                                    <i class="bi bi-bar-chart-line"></i>
+                                    <span>Data</span>
                                 </div>
-                            </div>
-                            <div class="card shadow rounded-4 border-0 mt-4">
-                                <div class="card-body p-5">
-                                    <h2 class="fw-bolder">个人网站开发</h2>
-                                    <p class="text-muted">基于开源 Bootstrap 模板搭建个人网站，完成页面中文化、简历整理、项目展示和导航修改，并使用 GitHub Desktop 管理版本，学习通过 GitHub Pages 发布。</p>
-                                    <span class="badge text-bg-light me-2">HTML</span>
-                                    <span class="badge text-bg-light me-2">CSS</span>
-                                    <span class="badge text-bg-light">GitHub Pages</span>
+                                <div class="card-body p-4 p-lg-5">
+                                    <div class="d-flex flex-wrap gap-2 mb-3">
+                                        <span class="badge text-bg-primary">数据分析</span>
+                                        <span class="badge text-bg-light">Pandas / Matplotlib</span>
+                                    </div>
+                                    <h2 class="h3 fw-bolder">门店数据采集与可视化</h2>
+                                    <p class="text-muted">使用 Python 完成门店数据采集、清洗、统计与相关性分析，并形成可视化分析报告。</p>
+                                    <ul class="project-points text-muted mb-0">
+                                        <li>重复值与异常值处理</li>
+                                        <li>多维统计和相关性分析</li>
+                                        <li>可视化结论呈现</li>
+                                    </ul>
                                 </div>
-                            </div>
+                            </article>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- Call to action section-->
             <section class="py-5 bg-gradient-primary-to-secondary text-white">
-                <div class="container px-5 my-5">
+                <div class="container px-5 my-4">
                     <div class="text-center">
-                        <h2 class="display-4 fw-bolder mb-4">欢迎了解我的项目</h2>
-                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">联系我</a>
+                        <h2 class="display-6 fw-bolder mb-3">想了解项目实现细节？</h2>
+                        <p class="lead mb-4">可以从 RepoPilot 的 README、测试与源代码开始。</p>
+                        <a class="btn btn-outline-light btn-lg px-5 py-3 fw-bolder" href="https://github.com/zhangnannanyyds/repo-learning-agent" target="_blank" rel="noreferrer">打开 GitHub</a>
                     </div>
                 </div>
             </section>
         </main>
-        <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
+        <footer class="bg-white py-4 mt-auto site-footer">
             <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">版权所有 &copy; 张楠楠 2026</div></div>
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row gap-3">
                     <div class="col-auto">
-                        <a class="small" href="index.html">首页</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="resume.html">个人简历</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="contact.html">联系我</a>
+                        <div class="small text-muted">
+                            Copyright &copy;&nbsp;
+                            <span id="currentYear">2026</span>
+                            张楠楠
+                        </div>
+                    </div>
+                    <div class="col-auto d-flex align-items-center gap-3">
+                        <a class="small text-decoration-none" href="mailto:1241812137@qq.com">邮箱</a>
+                        <a class="small text-decoration-none" href="https://github.com/zhangnannanyyds" target="_blank" rel="noreferrer">GitHub</a>
+                        <a class="small text-decoration-none" href="projects.html">项目</a>
                     </div>
                 </div>
             </div>
@@ -120,5 +162,3 @@
         <script src="js/scripts.js"></script>
     </body>
 </html>
-
-

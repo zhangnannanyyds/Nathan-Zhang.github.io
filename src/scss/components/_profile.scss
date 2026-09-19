@@ -1,28 +1,39 @@
-// Custom component for profile picture on the homepage
+// Homepage profile portrait
 
 .profile {
     position: relative;
-    height: 75vw;
-    width: 75vw;
-    border-radius: 5vw;
-    margin-top: 5vw;
-    max-height: 40rem;
-    max-width: 40rem;
+    width: min(72vw, 29rem);
+    aspect-ratio: 4 / 5;
+    border-radius: 2rem;
+    box-shadow: 0 1.5rem 4rem rgba(23, 74, 126, 0.2);
 
     .profile-img {
-        height: 80vw;
-        max-height: 45rem;
         position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
+        inset: 1rem;
+        width: calc(100% - 2rem);
+        height: calc(100% - 2rem);
+        border-radius: 1.4rem;
+        object-fit: cover;
+        object-position: center 22%;
+        background: #ffffff;
+    }
+
+    .dots-1,
+    .dots-2,
+    .dots-3,
+    .dots-4 {
+        position: absolute;
+        width: 1.35rem;
+
+        svg {
+            display: block;
+            width: 100%;
+        }
     }
 
     .dots-1 {
-        position: absolute;
-        width: 3vw;
-        right: 1.5vw;
-        top: 4vw;
+        right: 1.3rem;
+        top: 2.2rem;
 
         svg {
             fill: $white;
@@ -30,10 +41,8 @@
     }
 
     .dots-2 {
-        position: absolute;
-        width: 3vw;
-        right: -4vw;
-        top: 6.05vw;
+        right: -1.8rem;
+        top: 3.6rem;
 
         svg {
             fill: $primary;
@@ -41,10 +50,8 @@
     }
 
     .dots-3 {
-        position: absolute;
-        width: 3vw;
-        left: 1.5vw;
-        bottom: 6.05vw;
+        left: 1.3rem;
+        bottom: 3.6rem;
 
         svg {
             fill: $white;
@@ -52,141 +59,22 @@
     }
 
     .dots-4 {
-        position: absolute;
-        width: 3vw;
-        left: -4vw;
-        bottom: 4vw;
+        left: -1.8rem;
+        bottom: 2.2rem;
 
         svg {
             fill: $primary;
         }
     }
-
 }
 
-// Responsive styling for profile photo component
-
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-down(sm) {
     .profile {
-        height: 60vw;
-        width: 60vw;
-    
-        .profile-img {
-            height: 65vw;
-        }
-    
-        .dots-1 {
-            width: 3vw;
-            right: 1.5vw;
-        }
-    
-        .dots-2 {
-            width: 3vw;
-            right: -4vw;
-        }
-    
-        .dots-3 {
-            width: 3vw;
-            left: 1.5vw;
-        }
-    
+        width: min(76vw, 22rem);
+
+        .dots-2,
         .dots-4 {
-            width: 3vw;
-            left: -4vw;
-        }
-    
-    }
-}
-@include media-breakpoint-up(md) {
-    .profile {
-        height: 50vw;
-        width: 50vw;
-    
-        .profile-img {
-            height: 55vw;
-        }
-    
-        .dots-1 {
-            width: 3vw;
-            right: 1.5vw;
-        }
-    
-        .dots-2 {
-            width: 3vw;
-            right: -4vw;
-        }
-    
-        .dots-3 {
-            width: 3vw;
-            left: 1.5vw;
-        }
-    
-        .dots-4 {
-            width: 3vw;
-            left: -4vw;
-        }
-    
-    }
-}
-@include media-breakpoint-up(lg) {
-    .profile {
-        height: 40vw;
-        width: 40vw;
-    
-        .profile-img {
-            height: 45vw;
-        }
-    
-        .dots-1 {
-            width: 1.5vw;
-            right: 0.75vw;
-        }
-    
-        .dots-2 {
-            width: 1.5vw;
-            right: -2vw;
-        }
-    
-        .dots-3 {
-            width: 1.5vw;
-            left: 0.75vw;
-        }
-    
-        .dots-4 {
-            width: 1.5vw;
-            left: -2vw;
-        }
-    
-    }
-}
-
-@include media-breakpoint-up(xl) {
-    .profile {
-        height: 35vw;
-        width: 35vw;
-
-        .profile-img {
-            height: 40vw;
-        }
-
-        .dots-1 {
-            width: 1.5vw;
-            right: 0.75vw;
-        }
-
-        .dots-2 {
-            width: 1.5vw;
-            right: -2vw;
-        }
-
-        .dots-3 {
-            width: 1.5vw;
-            left: 0.75vw;
-        }
-
-        .dots-4 {
-            width: 1.5vw;
-            left: -2vw;
+            display: none;
         }
     }
 }

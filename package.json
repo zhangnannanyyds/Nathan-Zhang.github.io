@@ -1,6 +1,6 @@
 {
-    "title": "Personal",
-    "name": "startbootstrap-personal",
+    "title": "张楠楠的个人主页",
+    "name": "zhangnannan-portfolio",
     "version": "1.0.1",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
@@ -12,28 +12,20 @@
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },
-    "description": "A personal website template built with Bootstrap",
+    "description": "张楠楠的 AI Agent 与 Python 开发作品集",
     "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
+        "portfolio",
+        "ai-agent",
+        "python",
+        "bootstrap",
+        "github-pages"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/personal",
-    "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-personal/issues",
-        "email": "feedback@startbootstrap.com"
-    },
+    "homepage": "https://github.com/zhangnannanyyds/Nathan-Zhang.github.io",
     "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (https://davidmiller.io/)"
-    ],
+    "author": "张楠楠",
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-personal.git"
+        "url": "https://github.com/zhangnannanyyds/Nathan-Zhang.github.io.git"
     },
     "dependencies": {
         "bootstrap": "5.2.3"

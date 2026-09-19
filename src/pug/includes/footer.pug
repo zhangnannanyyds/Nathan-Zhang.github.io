@@ -1,11 +1,12 @@
-footer.bg-white.py-4.mt-auto
+footer.bg-white.py-4.mt-auto.site-footer
     .container.px-5
-        .row.align-items-center.justify-content-between.flex-column.flex-sm-row
+        .row.align-items-center.justify-content-between.flex-column.flex-sm-row.gap-3
             .col-auto
-                .small.m-0 Copyright &copy; Your Website 2023
-            .col-auto
-                a.small(href='#!') Privacy
-                span.mx-1 &middot;
-                a.small(href='#!') Terms
-                span.mx-1 &middot;
-                a.small(href='#!') Contact
+                .small.text-muted
+                    | Copyright &copy;&nbsp;
+                    span#currentYear 2026
+                    |  张楠楠
+            .col-auto.d-flex.align-items-center.gap-3
+                a.small.text-decoration-none(href='mailto:1241812137@qq.com') 邮箱
+                a.small.text-decoration-none(href='https://github.com/zhangnannanyyds', target='_blank', rel='noreferrer') GitHub
+                a.small.text-decoration-none(href='projects.html') 项目

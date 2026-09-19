@@ -1,63 +1,90 @@
 doctype html
-html(lang='en')
-
+html(lang='zh-CN')
     head
-
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+        meta(name='description', content='张楠楠的 AI Agent、HarmonyOS 与数据分析项目作品集。')
+        meta(name='author', content='张楠楠')
+        title 项目 | 张楠楠
 
-        title Modern Business - Start Bootstrap Template
-
-        // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
-
         include includes/css.pug
 
     body.d-flex.flex-column.h-100.bg-light
-
         main.flex-shrink-0
-
-            // Navigation
             include includes/navbar.pug
 
-            // Projects Section
             section.py-5
                 .container.px-5.mb-5
                     .text-center.mb-5
-                        h1.display-5.fw-bolder.mb-0
-                            span.text-gradient.d-inline Projects
-                    .row.gx-5.justify-content-center
+                        p.section-kicker.mb-2 项目作品集
+                        h1.display-5.fw-bolder.mb-3
+                            span.text-gradient.d-inline 从想法到可运行的软件
+                        p.lead.text-muted.mx-auto.projects-intro 这些项目覆盖 AI Agent 工具调用、智能家居交互与数据分析，记录了我从需求理解到实现和验证的过程。
 
-                        .col-lg-11.col-xl-9.col-xxl-8
+                    .row.g-4
+                        .col-12
+                            article.project-card.card.overflow-hidden.shadow-sm.rounded-4.border-0
+                                .row.g-0.align-items-stretch
+                                    .col-lg-8
+                                        .card-body.p-4.p-lg-5
+                                            .d-flex.flex-wrap.gap-2.mb-3
+                                                span.badge.text-bg-primary AI Agent
+                                                span.badge.text-bg-light Python
+                                                span.badge.text-bg-light GitHub API
+                                            h2.fw-bolder RepoPilot
+                                            p.lead.text-muted 代码仓库学习与调试 Agent
+                                            p.text-muted 面向本地项目和 GitHub 仓库提供只读分析，支持项目识别、文件检索、代码阅读、报错诊断、会话历史、多仓库对比与报告导出。
+                                            ul.project-points.text-muted
+                                                li 工具调用与 OpenAI 兼容模型接口
+                                                li 敏感文件过滤、路径校验和提示注入隔离
+                                                li 55 项离线单元测试通过
+                                            a.btn.btn-primary.mt-2(href='https://github.com/zhangnannanyyds/repo-learning-agent', target='_blank', rel='noreferrer')
+                                                i.bi.bi-github.me-2
+                                                | 查看 GitHub 仓库
+                                    .col-lg-4
+                                        .project-visual.ai-visual.h-100
+                                            i.bi.bi-cpu
+                                            span Agent
 
-                            // Project Card 1
-                            .card.overflow-hidden.shadow.rounded-4.border-0.mb-5
-                                .card-body.p-0
-                                    .d-flex.align-items-center
-                                        .p-5
-                                            h2.fw-bolder Project Name 1
-                                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!
-                                        img.img-fluid(src='https://dummyimage.com/300x400/343a40/6c757d', alt='...')
+                        .col-lg-6
+                            article.project-card.card.shadow-sm.rounded-4.border-0.h-100
+                                .project-visual.home-visual
+                                    i.bi.bi-house-gear
+                                    span HarmonyOS
+                                .card-body.p-4.p-lg-5
+                                    .d-flex.flex-wrap.gap-2.mb-3
+                                        span.badge.text-bg-primary 智能家居
+                                        span.badge.text-bg-light ArkTS / ArkUI
+                                    h2.h3.fw-bolder HarmonyOS 智能家居应用
+                                    p.text-muted 参与家庭、场景、消息和个人模块开发，完成设备管理、场景执行、状态同步及华为云 IoT 对接。
+                                    ul.project-points.text-muted.mb-0
+                                        li AppStorage 用户数据隔离
+                                        li TCP Socket / MQTT 通信
+                                        li 场景快照与冲突处理
 
-                            // Project Card 2
-                            .card.overflow-hidden.shadow.rounded-4.border-0
-                                .card-body.p-0
-                                    .d-flex.align-items-center
-                                        .p-5
-                                            h2.fw-bolder Project Name 2
-                                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!
-                                        img.img-fluid(src='https://dummyimage.com/300x400/343a40/6c757d', alt='...')
+                        .col-lg-6
+                            article.project-card.card.shadow-sm.rounded-4.border-0.h-100
+                                .project-visual.data-visual
+                                    i.bi.bi-bar-chart-line
+                                    span Data
+                                .card-body.p-4.p-lg-5
+                                    .d-flex.flex-wrap.gap-2.mb-3
+                                        span.badge.text-bg-primary 数据分析
+                                        span.badge.text-bg-light Pandas / Matplotlib
+                                    h2.h3.fw-bolder 门店数据采集与可视化
+                                    p.text-muted 使用 Python 完成门店数据采集、清洗、统计与相关性分析，并形成可视化分析报告。
+                                    ul.project-points.text-muted.mb-0
+                                        li 重复值与异常值处理
+                                        li 多维统计和相关性分析
+                                        li 可视化结论呈现
 
-            // Call to action section
             section.py-5.bg-gradient-primary-to-secondary.text-white
-                .container.px-5.my-5
+                .container.px-5.my-4
                     .text-center
-                        h2.display-4.fw-bolder.mb-4 Let's build something together
-                        a.btn.btn-outline-light.btn-lg.px-5.py-3.fs-6.fw-bolder(href='contact.html') Contact me
+                        h2.display-6.fw-bolder.mb-3 想了解项目实现细节？
+                        p.lead.mb-4 可以从 RepoPilot 的 README、测试与源代码开始。
+                        a.btn.btn-outline-light.btn-lg.px-5.py-3.fw-bolder(href='https://github.com/zhangnannanyyds/repo-learning-agent', target='_blank', rel='noreferrer') 打开 GitHub
 
-        // Footer
         include includes/footer.pug
-
         include includes/scripts.pug
